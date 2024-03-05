@@ -43,6 +43,7 @@
 }
 
 .main {
+    min-height: 690px;
     margin: 0 auto;
     max-width: 1300px;
     list-style-type: none;
