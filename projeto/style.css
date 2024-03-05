@@ -1,12 +1,14 @@
-* {
+@import url(variable.css);
+
+*, *::before, *::after{
     margin: 0px;
     padding: 0px;
 }
 
 .body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: snow;
-    color: black;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .header,
@@ -31,7 +33,12 @@
     text-decoration: none;
 }
 
-.container {
+.navigation a:hover {
+    font-size: 18px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.header-container {
     margin: 0 auto;
 }
 
@@ -48,6 +55,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin: 10px 40px 10px 10px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .clearfix::after{
@@ -63,9 +71,10 @@
 }
 
 .project-item {
+    border-radius: 5px;
     background-color: white;
     box-shadow: 0px 0px 10px darkslategrey;
-    border-radius: 5px;
+    transition: box-shadow var(--transition-speed);
 }
 
 .project-item img {
@@ -73,9 +82,45 @@
     height: 200px;
     object-fit: contain;
     border-bottom: 1px solid darkslategrey;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.project-item:hover{
+    img {
+        height: 210px;
+        padding-bottom: 10px;
+    }
+    box-shadow: 0px 0px 10px black;
 }
 
 .project-info {
     padding: 10px;
+}
+
+/*MOBILE CONFIGURATION*/
+@media screen and (width: 768px){
+    .navigation ul{
+        flex-direction: column;
+    }
+
+    .navigation li {
+        margin-bottom: 10px;
+        font-size: large;
+    }
+
+    .profile-picture{
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section{
+        text-align: center;
+    }
+} 
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
