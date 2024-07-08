@@ -5,14 +5,14 @@
     padding: 0px;
 }
 
-.body{
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-.header,
-.footer{
+header,
+footer{
     height: 50px;
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
@@ -44,14 +44,14 @@
     margin: 0 auto;
 }
 
-.main{
+main{
     min-height: 690px;
     margin: 0 auto;
     max-width: 1300px;
     list-style-type: none;
 }
 
-.main h2{
+main h2{
     font-size: 20px;
     font-style: italic;
 }
@@ -77,21 +77,21 @@
     display: table;
 }
 
-.project-grid{
+.course-grid{
     margin: 10px 0px;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
 }
 
-.project-item{
+.course-item{
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px rgb(128, 128, 128);
     transition: box-shadow var(--transition-speed);
 }
 
-.project-item img{
+.course-item img{
     width: 100%;
     height: 200px;
     object-fit: contain;
@@ -100,7 +100,7 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-.project-item:hover{
+.course-item:hover{
     img {
         height: 210px;
         padding-bottom: 10px;
@@ -108,7 +108,7 @@
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
-.project-info{
+.course-info{
     padding: 10px;
 }
 
@@ -132,7 +132,7 @@
     text-decoration: none;
 }
 
-.footer{
+footer{
     display: flex;
     margin-top: 10px;
 }
