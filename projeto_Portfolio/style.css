@@ -7,47 +7,69 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
     background-color: var(--background-color);
     color: var(--text-color);
+    justify-items: center;
 }
 
-.sidebar-top,
-.sidebar-bottom{
-    height: 50px;
+.page{
+    max-width: 1280px;
+    box-shadow: 0px 0px 10px var(--page-shadow);
+}
+
+.navigation{
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 150px;
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
 }
 
-.navigation ul{
+.navigation-top{
+    margin: 0 auto;
+}
+
+.navigation-top ul{
     display: flex;
     justify-content: center;
     align-content: center;
     list-style-type: none;
 }
 
-.navigation li{
+.navigation-top li{
+    width: 100px;
     margin: auto 0px;
     padding: 10 25px;
 }
 
-.navigation a{
+.navigation-top a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.navigation a:hover{
-    font-size: 18px;
+.navigation-top a:hover{
+    font-size: larger;
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
-.sidebar-top-container{
-    margin: 0 auto;
+.navigation-bottom{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.navigation-bottom p{
+    margin: auto 20px;
 }
 
 main{
     min-height: 690px;
-    margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1080px;
+    margin-inline: 160px 10px;
     list-style-type: none;
 }
 
@@ -62,13 +84,17 @@ main h2{
 }
 
 .profile-picture{
-    float: left;
+    float: center;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 100%;
     object-fit: cover;
-    margin: 10px 40px 10px 10px;
+    padding: 10px 20px 10px 20px;
     animation: fadeIn 1s ease-in-out;
+}
+
+.profile-info{
+    padding-right: 10px;
 }
 
 .clearfix::after{
@@ -132,30 +158,19 @@ main h2{
     text-decoration: none;
 }
 
-.sidebar-bottom
-{
-    display: flex;
-    margin-top: 10px;
-}
-
-.sidebar-bottom-grid{
-    display: flex;
-    width: 100%;
-    align-content: center;
-    justify-content: space-between;
-}
-
-.sidebar-bottom-grid p{
-    margin: auto 20px;
+/*WEB CONFIGURATION*/
+@media screen and (min-width: 768px){
+    
 }
 
 /*MOBILE CONFIGURATION*/
-@media screen and (width: 768px){
+@media screen and (max-width: 768px){
+    
     .navigation ul{
         flex-direction: column;
     }
 
-    .navigation li {
+    .navigation li{
         margin-bottom: 10px;
         font-size: large;
     }

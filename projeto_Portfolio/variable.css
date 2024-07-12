@@ -1,7 +1,17 @@
 :root {
     --transition-speed: 0.3s;
+}
 
+[data-tema='light']{
     --primary-color: rgb(90, 110, 140);
     --background-color: rgb(255, 250, 250);
     --text-color: rgb(0, 0, 0);
-}
+    --page-shadow: rgb(0, 0, 0);
+  }
+
+  [data-tema='dark'] {
+    --primary-color: rgb(90, 110, 140);
+    --background-color: rgb(65, 65, 65);
+    --text-color: rgb(200, 200, 200);
+    --page-shadow: rgb(200, 200, 200);
+  }
