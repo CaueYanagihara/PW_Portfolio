@@ -9,7 +9,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center; 
-    align-items: flex-start; 
+    align-items: flex-start;
     min-height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -17,6 +17,7 @@ body{
 
 .page{
     max-width: 1280px;
+    background: var(--page-background-color);
     box-shadow: 0px 0px 10px var(--page-shadow);
 }
 
@@ -47,7 +48,7 @@ body{
     height: 50px;
     margin: auto 0px;
     padding: 10 25px;
-    box-sizing: border-box; /* Inclui padding dentro da largura do li */
+    box-sizing: border-box;
 }
 
 .navigation-top a{
@@ -74,16 +75,34 @@ body{
 }
 
 main{
+    position: relative;
     min-height: 690px;
     max-width: 1080px;
     margin-inline: 160px 10px;
-    list-style-type: none;
 }
 
 main h2{
     font-size: 20px;
     font-style: italic;
 }
+
+.theme-button{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 110px;
+    top: 10px;
+    right: 10px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px rgb(115, 222, 255);
+}
+
+#changeTheme{
+    text-decoration: none;
+    color: var(--button-text-color);
+}
+    
 
 .profile-grid{
     display: flex;
@@ -119,8 +138,9 @@ main h2{
 
 .course-item{
     border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px rgb(128, 128, 128);
+    background-color: var(--course-background);
+    box-shadow: 0px 0px 10px rgb(128, 128, 128);;
+    color: rgb(0, 0, 0);
     transition: box-shadow var(--transition-speed);
 }
 
@@ -138,31 +158,53 @@ main h2{
         height: 210px;
         padding-bottom: 10px;
     }
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px var(--course-hover-shadow)
 }
 
 .course-info{
     padding: 10px;
 }
 
-.education-info{
-    padding-left: 10px;
+#education, #contact{
+    padding-bottom: 15px;
 }
 
-.education-info h2{
-    padding-top: 10px;
+.education-info, .contact-info{
+    padding-left: 15px;
 }
 
-.contact-info{
-    padding-left: 10px;
-} 
-
-.contact-info h2{
+.education-info h2, .contact-info h2{
     padding-top: 10px;
 }
 
 .contact-info a{
     text-decoration: none;
+}
+
+.contact-info p{
+    display: flex;
+    align-content: center;
+}
+
+.contact-info button{
+    width: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--page-background-color);
+}
+
+.contact-info button:hover{
+    box-shadow: 0px 0px 3px rgb(29, 29, 29);
+}
+
+.contact-info button img{
+    width: 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 /*MOBILE CONFIGURATION*/

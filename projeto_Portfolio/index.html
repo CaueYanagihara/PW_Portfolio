@@ -22,6 +22,9 @@
         </div>
     </nav>
     <main>
+        <div class="theme-button">
+            <a href="#" onclick="alterarTema()" id="changeTheme">Alterar Tema</a>
+        </div>
         <section id="about-me" class="clearfix">
             <div class="profile-grid">
                 <img class="profile-picture" src="images/profilepicture.jpg">
@@ -60,30 +63,33 @@
         </section>
         <section id="education">
             <h1>Formação</h1>
-            <div class="education-grid">
-                <article class="education-info">
-                    <h2>Ensino Superior</h2>
-                    <p>Cursando Engenharia de Software no Instituto Federal o Paraná - campus Paranavaí, de 2022 a 2025.</p>
-                    <h2>Escola de Inglês</h2>
-                    <p>Completado 2 anos do Childrens course na escola de inglês CCAA, de 2014 a 2016.</p>
-                </article>
-            </div>
+            <article class="education-info">
+                <h2>Ensino Superior</h2>
+                <p>Cursando Engenharia de Software no Instituto Federal o Paraná - campus Paranavaí, de 2022 a 2025.</p>
+                <h2>Escola de Inglês</h2>
+                <p>Completado 2 anos do Childrens course na escola de inglês CCAA, de 2014 a 2016.</p>
+            </article>
         </section>
         <section id="contact">
             <h1>Contato</h1>
-            <div class="contact-grid">
-                <article class="contact-info">
-                    <h2>Linkedin</h2>
-                    <a href="https://www.linkedin.com/in/cau%C3%AA-grande-yanagihara-24a171234/">Perfil no Linkedin</a>
-                    <h2>Telefone/WhatsApp</h2>
-                    <p>(44) 99740-0891</p>
-                    <h2>Email</h2>
-                    <p>Caueyanagihara@gmail.com</p>
-                </article>
-            </div>
+            <article class="contact-info">
+                <h2>Linkedin</h2>
+                <a href="https://www.linkedin.com/in/cauegrandeyanagihara/">Perfil no Linkedin</a>
+                <h2>Telefone/WhatsApp</h2>
+                <div class="info">
+                    <p id="copyable-data">(44) 99740-0891</p>
+                    <button onclick="copiar(this)"><img src="images/copy.png" alt="Copy"></button>
+                </div>
+                <h2>Email</h2>
+                <div class="info">
+                    <p id="copyable-data">Caueyanagihara@gmail.com</p> 
+                    <button onclick="copiar(this)"><img src="images/copy.png" alt="Copy"></button>
+                </div>                
+            </article>
         </section>
     </main>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
 
