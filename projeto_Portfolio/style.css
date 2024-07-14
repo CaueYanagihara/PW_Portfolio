@@ -202,9 +202,12 @@ main h2{
     align-items: center;
 }
 
-.repositories li{
-    text-decoration: none;
+#listaRepositorios{
     list-style-type: none;
+}
+
+#listaRepositorios li{
+    text-decoration: none;
 }
 
 /*MOBILE CONFIGURATION*/
