@@ -78,7 +78,7 @@ main{
     position: relative;
     min-height: 690px;
     max-width: 1080px;
-    margin-inline: 160px 10px;
+    margin: 0px 10px 30px 160px;
 }
 
 main h2{
@@ -181,11 +181,6 @@ main h2{
     text-decoration: none;
 }
 
-.contact-info p{
-    display: flex;
-    align-content: center;
-}
-
 .contact-info button{
     width: 25px;
     border-radius: 10px;
@@ -205,6 +200,11 @@ main h2{
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+.repositories li{
+    text-decoration: none;
+    list-style-type: none;
 }
 
 /*MOBILE CONFIGURATION*/

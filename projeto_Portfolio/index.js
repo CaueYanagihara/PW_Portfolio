@@ -32,27 +32,19 @@ function copiar(botao){
 }
 
 async function consultarRepositorios() {
-    const nomeUsuario = "cauegrandeyanagihara";
-
+    const nomeUsuario = "CaueYanagihara";
     const listaRepositorios = document.getElementById("listaRepositorios");
     listaRepositorios.innerText = '';
-
     const status = document.getElementById("status");
-
-    if (!nomeUsuario) {
-        alert("Obrigatorio informar nome do usuario!");
-        return;
-    }
-
     const url = `https://api.github.com/users/${nomeUsuario}/repos`;
 
     status.innerText="Carregando...";
     try {
         const resposta = await fetch(url); //AGUARDA A RESPOSTA PARA DEPOIS EXECUTAR O RESTO DO CODIGO
-        //resposta.then(res=>{console.log(res)});       //-----EXECUTA O RESTO DO CODIGO ENQUANTO AGUARDA O FETCH ATRIBUIR UM VALOR A VARIAVEL.
+        //resposta.then(res=>{console.log(res)});//-----EXECUTA O RESTO DO CODIGO ENQUANTO AGUARDA O FETCH ATRIBUIR UM VALOR A VARIAVEL.
 
         if(!resposta.ok){
-            alert("Erro ao realizar a consulta.");
+            alert("Erro ao realizar a consulta. Tente novamente mais tarde.");
             return;
         }
 
@@ -61,10 +53,13 @@ async function consultarRepositorios() {
         repositorios.forEach(element => {
             const itemLista = document.createElement('li');
             itemLista.textContent = element.name;
+
             listaRepositorios.appendChild(itemLista);
         });
 
         status.innerText = "";
     } catch (error) {
+        status.innerText="Erro.";
+        alert(error);
     }
 }

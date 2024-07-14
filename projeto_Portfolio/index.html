@@ -8,86 +8,94 @@
 
 <body data-tema="light">
     <div class="page">
-    <nav class="navigation">
-        <div class="navigation-top">
-            <ul>
-                <li onclick="aoTocarMobile()"><a href="#about-me">Sobre Mim</a></li>
-                <li><a href="#course">Cursos</a></li>
-                <li><a href="#education">Formação</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
-        <div class="navigation-bottom">
-            <img src="images/ifprLogo.png" alt="IFPR-Logo">
-        </div>
-    </nav>
-    <main>
-        <div class="theme-button">
-            <a href="#" onclick="alterarTema()" id="changeTheme">Alterar Tema</a>
-        </div>
-        <section id="about-me" class="clearfix">
-            <div class="profile-grid">
-                <img class="profile-picture" src="images/profilepicture.jpg">
-                <div class="profile-info">
-                    <h1>Cauê Grande Yanagihara</h1>
-                    <p>Estudante de Engenharia de Software e Analista de Suporte.</p>
-                    <p>Bem vindo ao meu curriculo montado manualmente com HTML e CSS.</p>
-                </div>
+        <nav class="navigation">
+            <div class="navigation-top">
+                <ul>
+                    <li onclick="aoTocarMobile()"><a href="#about-me">Sobre Mim</a></li>
+                    <li><a href="#course">Cursos</a></li>
+                    <li><a href="#education">Formação</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
             </div>
-        </section>
-        <section id="course">
-            <h1>Cursos</h1>
-            <div class="course-grid">
-                <article class="course-item">
-                    <div class="course-info">
-                        <img src="images/projectJava.jpg" alt="Curso 1">
-                        <h2>Desenvolvimento de um Jogo com Java.</h2>
-                        <p>Na disciplina de POO do IFPR em 2023, foi desenvolvido um jogo no estilo Space Invaders utilizando Java Orientado a Objeto.</p>
-                    </div>
-                </article>
-                <article class="course-item">
-                    <div class="course-info">
-                        <img src="images/projectDartFlutter.jpg" alt="Curso 2">
-                        <h2>Uma abordagem Dart Flutter para desenvolvimento Mobile Híbrido.</h2>
-                        <p>Curso foi apresentado no IFPR em 2022 e teve duração de 76 horas. Nele, foi desenvolvido cursos utilizando Dart no SDK Flutter.</p>
-                    </div>
-                </article>
-                <article class="course-item">
-                    <div class="course-info">
-                        <img src="images/project_0.jpg" alt="Curso 3">
-                        <h2>Curso3</h2>
-                        <p>Descrição do curso.</p>
-                    </div>
-                </article>
+            <div class="navigation-bottom">
+                <img src="images/ifprLogo.png" alt="IFPR-Logo">
             </div>
-        </section>
-        <section id="education">
-            <h1>Formação</h1>
-            <article class="education-info">
-                <h2>Ensino Superior</h2>
-                <p>Cursando Engenharia de Software no Instituto Federal o Paraná - campus Paranavaí, de 2022 a 2025.</p>
-                <h2>Escola de Inglês</h2>
-                <p>Completado 2 anos do Childrens course na escola de inglês CCAA, de 2014 a 2016.</p>
-            </article>
-        </section>
-        <section id="contact">
-            <h1>Contato</h1>
-            <article class="contact-info">
-                <h2>Linkedin</h2>
-                <a href="https://www.linkedin.com/in/cauegrandeyanagihara/">Perfil no Linkedin</a>
-                <h2>Telefone/WhatsApp</h2>
-                <div class="info">
-                    <p id="copyable-data">(44) 99740-0891</p>
-                    <button onclick="copiar(this)"><img src="images/copy.png" alt="Copy"></button>
+        </nav>
+        <main>
+            <div class="theme-button">
+                <a href="#" onclick="alterarTema()" id="changeTheme">Alterar Tema</a>
+            </div>
+            <section id="about-me" class="clearfix">
+                <div class="profile-grid">
+                    <img class="profile-picture" src="images/profilepicture.jpg">
+                    <div class="profile-info">
+                        <h1>Cauê Grande Yanagihara</h1>
+                        <p>Estudante de Engenharia de Software e Analista de Suporte.</p>
+                        <p>Bem vindo ao meu curriculo montado manualmente com HTML e CSS.</p>
+                    </div>
                 </div>
-                <h2>Email</h2>
-                <div class="info">
-                    <p id="copyable-data">Caueyanagihara@gmail.com</p> 
-                    <button onclick="copiar(this)"><img src="images/copy.png" alt="Copy"></button>
-                </div>                
-            </article>
-        </section>
-    </main>
+            </section>
+            <section id="course">
+                <h1>Cursos</h1>
+                <div class="course-grid">
+                    <article class="course-item">
+                        <div class="course-info">
+                            <img src="images/projectJava.jpg" alt="Curso 1">
+                            <h2>Desenvolvimento de um Jogo com Java.</h2>
+                            <p>Na disciplina de POO do IFPR em 2023, foi desenvolvido um jogo no estilo Space Invaders utilizando Java Orientado a Objeto.</p>
+                        </div>
+                    </article>
+                    <article class="course-item">
+                        <div class="course-info">
+                            <img src="images/projectDartFlutter.jpg" alt="Curso 2">
+                            <h2>Uma abordagem Dart Flutter para desenvolvimento Mobile Híbrido.</h2>
+                            <p>Curso foi apresentado no IFPR em 2022 e teve duração de 76 horas. Nele, foi desenvolvido cursos utilizando Dart no SDK Flutter.</p>
+                        </div>
+                    </article>
+                    <article class="course-item">
+                        <div class="course-info">
+                            <img src="images/project_0.jpg" alt="Curso 3">
+                            <h2>Curso3</h2>
+                            <p>Descrição do curso.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="education">
+                <h1>Formação</h1>
+                <article class="education-info">
+                    <h2>Ensino Superior</h2>
+                    <p>Cursando Engenharia de Software no Instituto Federal o Paraná - campus Paranavaí, de 2022 a 2025.</p>
+                    <h2>Escola de Inglês</h2>
+                    <p>Completado 2 anos do Childrens course na escola de inglês CCAA, de 2014 a 2016.</p>
+                </article>
+            </section>
+            <section id="contact">
+                <h1>Contato</h1>
+                <article class="contact-info">
+                    <h2>Linkedin</h2>
+                    <a href="https://www.linkedin.com/in/cauegrandeyanagihara/">Perfil no Linkedin</a>
+                    <h2>Telefone/WhatsApp</h2>
+                    <div class="info">
+                        <p id="copyable-data">(44) 99740-0891</p>
+                        <button onclick="copiar(this)"><img src="images/copy.png" alt="Copy"></button>
+                    </div>
+                    <h2>Email</h2>
+                    <div class="info">
+                        <p id="copyable-data">Caueyanagihara@gmail.com</p> 
+                        <button onclick="copiar(this)"><img src="images/copy.png" alt="Copy"></button>
+                    </div>                
+                </article>
+            </section>
+            <section id="github" class="github-repositories">
+                <h1>Repositorios do Github</h1>
+                <button onclick="consultarRepositorios()">Buscar Repositorios</button>
+                <span id="status"></span>
+                <article class="contact-info">
+                    <ul id="listaRepositorios"></ul>
+                </article>
+            </section>
+        </main>
     </div>
     <script src="index.js"></script>
 </body>
