@@ -11,6 +11,7 @@
   --course-background: rgb(255, 255, 255);
   --course-hover-shadow:rgb(0, 0, 0);
   --button-text-color: rgb(0, 0, 0);
+  --link-color: rgb(0, 75, 190);
 }
 
 [data-tema='dark'] {
@@ -22,4 +23,5 @@
   --course-background: rgb(255, 255, 255);
   --course-hover-shadow:rgb(80, 80, 80);
   --button-text-color: rgb(255, 255, 255);
+  --link-color: rgb(115, 222, 255);
 }

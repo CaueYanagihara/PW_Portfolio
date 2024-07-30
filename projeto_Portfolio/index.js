@@ -19,6 +19,20 @@ function alterarTema(){
     localStorage.setItem('tema', novoTema);//SALVA UMA VARIAVEL LOCAL NO NAVEGADOR
 }
 
+async function imprimirPortifolio() {
+    var botoes = document.getElementsByClassName("top-button");
+    
+    for (var i=0; i< botoes.length; i++){
+        botoes[i].style.display = "none";
+    }
+
+    window.print();
+
+    for (var i = 0; i < botoes.length; i++) {
+        botoes[i].style.display = "flex";
+    }
+}
+
 function copiar(botao){
     const paragrafo = botao.previousElementSibling;
     const informacao = paragrafo.textContent;
@@ -52,7 +66,12 @@ async function consultarRepositorios() {
 
         repositorios.forEach(element => {
             const itemLista = document.createElement('li');
-            itemLista.textContent = element.name;
+            var link = document.createElement('a');
+
+            link.href = element.html_url;
+            link.textContent = element.name;
+
+            itemLista.appendChild(link);
 
             listaRepositorios.appendChild(itemLista);
         });

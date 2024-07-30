@@ -24,7 +24,7 @@ body{
 .navigation{
     overflow: hidden;
     position: fixed;
-    height: 100vh;
+    height: 1380px;
     width: 150px;
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
@@ -63,11 +63,13 @@ body{
 
 .navigation-bottom{
     display: flex;
+    height: 100%;
     justify-content: center;
 }
 
 .navigation-bottom img{
     max-width: 130px;
+    object-fit: contain;
 }
 
 .navigation-bottom p{
@@ -86,7 +88,8 @@ main h2{
     font-style: italic;
 }
 
-.theme-button{
+.theme-button, 
+.print-button{
     display: flex;
     position: absolute;
     justify-content: center;
@@ -96,6 +99,11 @@ main h2{
     background: var(--primary-color);
     border-radius: 10px;
     box-shadow: 0px 0px 0px 1px rgb(115, 222, 255);
+}
+
+.print-button {
+    top: 40px;
+    right: 10px;
 }
 
 #changeTheme{
@@ -177,10 +185,6 @@ main h2{
     padding-top: 10px;
 }
 
-.contact-info a{
-    text-decoration: none;
-}
-
 .contact-info button{
     width: 25px;
     border-radius: 10px;
@@ -196,6 +200,11 @@ main h2{
     width: 20px;
 }
 
+.contact-info a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+
 .info{
     display: flex;
     justify-content: left;
@@ -206,8 +215,13 @@ main h2{
     list-style-type: none;
 }
 
-#listaRepositorios li{
+#listaRepositorios li {
+    padding: 15px 0 0 10px;
+}
+
+#listaRepositorios a{
     text-decoration: none;
+    color: var(--link-color);
 }
 
 /*MOBILE CONFIGURATION*/
